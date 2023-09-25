@@ -1,0 +1,27 @@
+.loginContainer {
+  background-color: #18181b;
+  height: 500px;
+  width: 800px;
+  border-radius: 2px;
+}
+
+#username,
+#password {
+  color: grey;
+  background-color: #18181b;
+  //   border: 2px solid grey;
+  //   border-radius: 2px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+  transition-delay: background-color 5000s, color 5000s;
+}
+
+#link1 {
+  text-decoration: none;
+  color: #e53e3e;
+}

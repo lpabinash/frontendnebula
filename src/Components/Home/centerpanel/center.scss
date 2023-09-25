@@ -1,0 +1,119 @@
+.subCont{
+    width:98% !important;
+    padding-left: 2%;
+}
+
+.bgGrad{
+    background-image: url(https://beatbox-music.vercel.app/gradient_bg.jpg);
+    height: 20rem;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.sub{
+    font-weight: bolder !important;
+    font-size: 2.4rem !important;
+    margin-bottom: 5px !important;
+}
+
+.sub2{
+    font-size: 1.1rem !important;
+    margin-bottom: 5px !important;
+}
+
+.universalSearch{
+    margin-bottom: 20px;
+    .search{
+        background-color: black;
+        border:2px solid grey;
+    }  
+}
+.listenNowBtn{
+    width:9rem;
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .universalSearch {
+      margin-top: 75px;
+  }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    display: none;
+  }
+  
+  .cardcontainer{
+    border-radius: 10px !important;
+    transition: transform 4s ease-in-out;
+    -webkit-transition: transform 2s ease-in-out;
+    position: relative;
+    .commontypo{
+        color:white !important;
+        
+    }
+    p{
+        font-size: 0.8rem !important;
+        padding:0 0 16px;
+    }
+    h6{
+        font-size: 1rem !important;
+    }
+  }
+
+   .imgBox:hover .overlay{
+    display: block;
+    background: rgba(0, 0, 0, .3) !important;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artistcontainer{
+    div{
+        white-space: normal !important;
+    }
+    img{
+        border-radius: 50% !important;
+        border: 5px solid #EE4950;
+    }
+    .commontypo{
+        color:white;
+        word-wrap: break-word;
+    }
+    p{
+        font-size: 0.9rem !important;
+        padding:0 0 16px;
+    }
+    // height: 50px;
+    // width:50px
+}
+
+
+
+
+.imgBox {
+    display: inline-block; 
+    overflow: hidden; 
+    position: relative;
+  }
+  .imgBox img {
+    display: block; 
+    transition: 4s ease-in-out;
+  }
+  .cardcontainer:hover .imgBox img {
+    transform: scale(1.3);
+    transition: transform 4s ease-in-out;
+
+  }

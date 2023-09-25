@@ -1,0 +1,106 @@
+:root {
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+  --gray-50: #f7fafc;
+  --gray-100: #edf2f7;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e0;
+  --gray-400: #a0aec0;
+  --gray-500: #718096;
+  --gray-600: #4a5568;
+  --gray-700: #2d3748;
+  --gray-800: #1a202c;
+  --gray-900: #171923;
+  --red-50: #fff5f5;
+  --red-100: #fed7d7;
+  --red-200: #feb2b2;
+  --red-300: #fc8181;
+  --red-400: #f56565;
+  --red-500: #e53e3e;
+  --red-600: #c53030;
+  --red-700: #9b2c2c;
+}
+
+body {
+  background-color: black !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--gray-600);
+}
+
+.topcharts {
+  background-color: var(--zinc-800);
+  margin: 20px 15px 20px 15px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  height: 500px;
+  overflow: scroll;
+}
+
+.topcharts::-webkit-scrollbar {
+  display: none;
+}
+.topcharts:hover::-webkit-scrollbar{
+  display:block;
+}
+
+
+.musiccategories {
+  margin: 20px 15px 20px 15px;
+  padding: 10px;
+  color: white;
+}
+
+.topchartsList {
+  background-color: var(--gray-900);
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.mainGrid {
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.sidebar {
+  height: 100vh !important;
+}
+
+.listItem:hover {
+  background-color: var(--red-300);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    width: 0;
+  }
+}
+
+.textwrap60 span {
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 60%;
+}

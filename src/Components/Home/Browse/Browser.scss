@@ -1,0 +1,40 @@
+.browser {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 10px !important;
+}
+
+.card img {
+  transition: transform 1s;
+}
+
+.card:hover img {
+  transition: 1s transform;
+  transform: scale(1.1);
+}
+
+.playcircleicon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+  display: none;
+  height: 200px;
+  width: 100%;
+}
+
+.hoverimag:hover .playcircleicon {
+  display: block;
+  background: rgba(0, 0, 0, 0.3) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s transform;
+  transform: scale(1.1);
+}

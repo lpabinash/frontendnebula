@@ -22,7 +22,7 @@ function TrackCarousel({ tracks }) {
           orientation="horizontal"
           key={item.id}
           variant="outlined"
-          sx={{ minWidth: 170, backgroundColor: "#18181B" }}
+          sx={{  backgroundColor: "#18181B" }}
           className="cardcontainer"
         >
           <div className="imgBox">

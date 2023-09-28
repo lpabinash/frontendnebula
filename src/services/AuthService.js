@@ -3,7 +3,7 @@ import jwt_decode from "jwt-decode";
 
 class AuthService {
 
-    serveraddress = this.isLocalServer() ? "https://backend-r7c1.onrender.com/" : "https://backend-r7c1.onrender.com/";
+    serveraddress = this.isLocalServer() ? "http://localhost:5001/" : "https://nebula.com/";
 
     API_Login = this.serveraddress + "user/login";
     API_Register = this.serveraddress + "user/register";

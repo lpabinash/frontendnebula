@@ -26,7 +26,7 @@ import { yellow } from "@mui/material/colors";
 import { Link, useLocation } from "react-router-dom";
 import AuthService from "../../../services/AuthService";
 
-const drawerWidth = "24%";
+const drawerWidth = "20%";
 
 // interface Props {
 //   window?: () => Window;
@@ -203,6 +203,7 @@ export default function Leftslidebar(props) {
         sx={{
           width: { md: drawerWidth },
           flexShrink: { md: 0 },
+          minWidth: { md: "240px" },
           // backgroundColor: "#1A202C",
         }}
         aria-label="mailbox folders"

@@ -8,11 +8,12 @@ import BroswerPanel from "../Home/Browse/BrowserPanel";
 function NebulaMain() {
   return (
     <React.Fragment>
-      <Grid container>
-        <Grid item xs={0} sm={0} md={3} lg={3} className="sidebar">
-          <Leftslidebar />
-        </Grid>
-        <Grid item className="mainGrid" xs={12} md={9} lg={9}>
+      <div style={{display:"flex"}}>
+        <div style={{width:"20vw"}} className="sidebarCont">
+      <Leftslidebar />
+      </div>
+        {/* <Grid item className="mainGrid" sx={{marginLeft:"20%"}} xs={12} md={10} lg={10}> */}
+        <div className="mainGrid">
       <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
           <Center />
@@ -21,11 +22,12 @@ function NebulaMain() {
           <Rightslidebar />
         </Grid>
       </Grid>
-         </Grid>
+      </div>
+         {/* </Grid> */}
         {/* <Grid item className="mainGrid" xs={12} md={9} lg={9}>
           <BroswerPanel />
         </Grid> */}
-      </Grid>
+      </div>
       {/* <AudioPlayer /> */}
     </React.Fragment>
   );

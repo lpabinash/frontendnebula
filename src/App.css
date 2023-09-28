@@ -78,8 +78,9 @@ body::-webkit-scrollbar-thumb {
 
 .mainGrid {
   margin: 0 !important;
-  width: 100% !important;
-  height: 100vh !important;
+  width: calc(100vw - max(20vw,240px)) ;
+  position: absolute;
+  right:0px
 }
 
 .sidebar {
@@ -95,7 +96,14 @@ body::-webkit-scrollbar-thumb {
   .sidebar {
     width: 0;
   }
+  .mainGrid {
+    width:100% !important;
+  }
+  .sidebarCont{
+    width:0% !important;
+  }
 }
+
 
 .textwrap60 span {
   overflow: hidden;
@@ -103,4 +111,12 @@ body::-webkit-scrollbar-thumb {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 60%;
+}
+
+.css-3stu8z-MuiDrawer-docked .MuiDrawer-paper{
+  min-width: 240px !important;
+}
+.css-3mjn5i-MuiModal-root-MuiDrawer-root .MuiDrawer-paper{
+  min-width: 200px !important;
+
 }

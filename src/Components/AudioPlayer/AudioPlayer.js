@@ -8,6 +8,7 @@ import AuthService from '../../services/AuthService';
 import axios from 'axios';
 import { useSelector,useDispatch } from 'react-redux';
 import { createAction } from '@reduxjs/toolkit'
+import Skeleton from '@mui/material/Skeleton';
 
 export default function AudioPlayer() {
 
@@ -52,7 +53,7 @@ export default function AudioPlayer() {
                 showSkipControls={true}
                 showFilledVolume={true}
                 showJumpControls={false}
-                header={`Now playing: ${musicPlaying?.title}`}
+                header={musicPlaying.title?`Now playing: ${musicPlaying?.title}`:<Skeleton variant="text" width={210} height={30} />}
                 onClickPrevious={handleClickPrevious}
                 onClickNext={handleClickNext}
                 onEnded={handleClickNext}

@@ -22,17 +22,17 @@ function TrackCarousel({ tracks }) {
           orientation="horizontal"
           key={item.id}
           variant="outlined"
-          sx={{  backgroundColor: "#18181B" }}
+          sx={{minWidth: 160,  backgroundColor: "#18181B" }}
           className="cardcontainer"
         >
           <div className="imgBox">
             <img
-              src={`${item.src}?h=120&fit=crop&auto=format`}
-              srcSet={`${item.src}?h=120&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.src}`}
+              srcSet={`${item.src}`}
               alt={item.title}
-              width="100%"
               className="cardimage"
-              maxHeight="100%"
+              height="160px"
+              width="160px"
             />
             <div className="overlay">
               <PlayCircleIcon sx={{ color: "whitesmoke" }} fontSize="large" />
